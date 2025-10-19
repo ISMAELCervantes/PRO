@@ -32,6 +32,14 @@
             txtBusqueda = new TextBox();
             btnBuscar = new Button();
             dataGridView1 = new DataGridView();
+            región = new DataGridViewTextBoxColumn();
+            país = new DataGridViewTextBoxColumn();
+            fax = new DataGridViewTextBoxColumn();
+            compañía = new DataGridViewTextBoxColumn();
+            título = new DataGridViewTextBoxColumn();
+            ciudad = new DataGridViewTextBoxColumn();
+            Postal = new DataGridViewTextBoxColumn();
+            teléfono = new DataGridViewTextBoxColumn();
             lbID = new Label();
             lbContacto = new Label();
             lbDirección = new Label();
@@ -58,14 +66,6 @@
             btnActualizar = new Button();
             btnEliminar = new Button();
             btnLimpiar = new Button();
-            región = new DataGridViewTextBoxColumn();
-            país = new DataGridViewTextBoxColumn();
-            fax = new DataGridViewTextBoxColumn();
-            compañía = new DataGridViewTextBoxColumn();
-            título = new DataGridViewTextBoxColumn();
-            ciudad = new DataGridViewTextBoxColumn();
-            Postal = new DataGridViewTextBoxColumn();
-            teléfono = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -102,8 +102,71 @@
             dataGridView1.Location = new Point(12, 105);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(1428, 188);
+            dataGridView1.Size = new Size(1051, 188);
             dataGridView1.TabIndex = 3;
+            // 
+            // región
+            // 
+            región.DataPropertyName = "Región";
+            región.HeaderText = "Región";
+            región.MinimumWidth = 6;
+            región.Name = "región";
+            región.Width = 125;
+            // 
+            // país
+            // 
+            país.DataPropertyName = "País";
+            país.HeaderText = "País";
+            país.MinimumWidth = 6;
+            país.Name = "país";
+            país.Width = 125;
+            // 
+            // fax
+            // 
+            fax.DataPropertyName = "Fax";
+            fax.HeaderText = "Fax";
+            fax.MinimumWidth = 6;
+            fax.Name = "fax";
+            fax.Width = 125;
+            // 
+            // compañía
+            // 
+            compañía.DataPropertyName = "Compañía";
+            compañía.HeaderText = "Compañía";
+            compañía.MinimumWidth = 6;
+            compañía.Name = "compañía";
+            compañía.Width = 125;
+            // 
+            // título
+            // 
+            título.DataPropertyName = "Título";
+            título.HeaderText = "Título";
+            título.MinimumWidth = 6;
+            título.Name = "título";
+            título.Width = 125;
+            // 
+            // ciudad
+            // 
+            ciudad.DataPropertyName = "Ciudad";
+            ciudad.HeaderText = "Ciudad";
+            ciudad.MinimumWidth = 6;
+            ciudad.Name = "ciudad";
+            ciudad.Width = 125;
+            // 
+            // Postal
+            // 
+            Postal.HeaderText = "C. Postal";
+            Postal.MinimumWidth = 6;
+            Postal.Name = "Postal";
+            Postal.Width = 125;
+            // 
+            // teléfono
+            // 
+            teléfono.DataPropertyName = "Teléfono";
+            teléfono.HeaderText = "Teléfono";
+            teléfono.MinimumWidth = 6;
+            teléfono.Name = "teléfono";
+            teléfono.Width = 125;
             // 
             // lbID
             // 
@@ -321,75 +384,11 @@
             btnLimpiar.UseVisualStyleBackColor = true;
             btnLimpiar.Click += btnLimpiar_Click;
             // 
-            // región
-            // 
-            región.DataPropertyName = "Región";
-            región.HeaderText = "Región";
-            región.MinimumWidth = 6;
-            región.Name = "región";
-            región.Width = 125;
-            // 
-            // país
-            // 
-            país.DataPropertyName = "País";
-            país.HeaderText = "País";
-            país.MinimumWidth = 6;
-            país.Name = "país";
-            país.Width = 125;
-            // 
-            // fax
-            // 
-            fax.DataPropertyName = "Fax";
-            fax.HeaderText = "Fax";
-            fax.MinimumWidth = 6;
-            fax.Name = "fax";
-            fax.Width = 125;
-            // 
-            // compañía
-            // 
-            compañía.DataPropertyName = "Compañía";
-            compañía.HeaderText = "Compañía";
-            compañía.MinimumWidth = 6;
-            compañía.Name = "compañía";
-            compañía.Width = 125;
-            // 
-            // título
-            // 
-            título.DataPropertyName = "Título";
-            título.HeaderText = "Título";
-            título.MinimumWidth = 6;
-            título.Name = "título";
-            título.Width = 125;
-            // 
-            // ciudad
-            // 
-            ciudad.DataPropertyName = "Ciudad";
-            ciudad.HeaderText = "Ciudad";
-            ciudad.MinimumWidth = 6;
-            ciudad.Name = "ciudad";
-            ciudad.Width = 125;
-            // 
-            // Postal
-            // 
-            Postal.DataPropertyName = "C. Postal";
-            Postal.HeaderText = "C. Postal";
-            Postal.MinimumWidth = 6;
-            Postal.Name = "Postal";
-            Postal.Width = 125;
-            // 
-            // teléfono
-            // 
-            teléfono.DataPropertyName = "Teléfono";
-            teléfono.HeaderText = "Teléfono";
-            teléfono.MinimumWidth = 6;
-            teléfono.Name = "teléfono";
-            teléfono.Width = 125;
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1443, 862);
+            ClientSize = new Size(1075, 862);
             Controls.Add(btnLimpiar);
             Controls.Add(btnEliminar);
             Controls.Add(btnActualizar);

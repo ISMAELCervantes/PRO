@@ -3,14 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\ismae\\OneDrive\\Desktop\\proyecto\\DataCliente\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E9C625A2-E640-4452-BA61-C78457C7BF08}|..\\PantallaClientes\\PantallaClientes.csproj|c:\\users\\ismae\\onedrive\\desktop\\proyecto\\pantallaclientes\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E9C625A2-E640-4452-BA61-C78457C7BF08}|..\\PantallaClientes\\PantallaClientes.csproj|c:\\users\\ismae\\onedrive\\desktop\\proyecto\\pantallaclientes\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E9C625A2-E640-4452-BA61-C78457C7BF08}|..\\PantallaClientes\\PantallaClientes.csproj|c:\\users\\ismae\\onedrive\\desktop\\proyecto\\pantallaclientes\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{52EAAAAC-A366-41E0-9D9C-D59BB87B58C5}|DataCliente.csproj|c:\\users\\ismae\\onedrive\\desktop\\proyecto\\datacliente\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52EAAAAC-A366-41E0-9D9C-D59BB87B58C5}|DataCliente.csproj|solutionrelative:cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{52EAAAAC-A366-41E0-9D9C-D59BB87B58C5}|DataCliente.csproj|c:\\users\\ismae\\onedrive\\desktop\\proyecto\\datacliente\\datacliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{52EAAAAC-A366-41E0-9D9C-D59BB87B58C5}|DataCliente.csproj|solutionrelative:datacliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{678EECCF-8575-4C83-873A-2F06A0A3B23F}|..\\NegocioCliente\\NegocioCliente.csproj|c:\\users\\ismae\\onedrive\\desktop\\proyecto\\negociocliente\\negociocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9C625A2-E640-4452-BA61-C78457C7BF08}|..\\PantallaClientes\\PantallaClientes.csproj|c:\\users\\ismae\\onedrive\\desktop\\proyecto\\pantallaclientes\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9C625A2-E640-4452-BA61-C78457C7BF08}|..\\PantallaClientes\\PantallaClientes.csproj|c:\\users\\ismae\\onedrive\\desktop\\proyecto\\pantallaclientes\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -20,8 +30,38 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ismae\\OneDrive\\Desktop\\proyecto\\PantallaClientes\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "..\\PantallaClientes\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\ismae\\OneDrive\\Desktop\\proyecto\\PantallaClientes\\Form1.Designer.cs",
+              "RelativeToolTip": "..\\PantallaClientes\\Form1.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T19:35:29.597Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "C:\\Users\\ismae\\OneDrive\\Desktop\\proyecto\\DataCliente\\Cliente.cs",
+              "RelativeDocumentMoniker": "Cliente.cs",
+              "ToolTip": "C:\\Users\\ismae\\OneDrive\\Desktop\\proyecto\\DataCliente\\Cliente.cs",
+              "RelativeToolTip": "Cliente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T13:47:53.294Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -30,39 +70,48 @@
               "RelativeDocumentMoniker": "DataCliente.cs",
               "ToolTip": "C:\\Users\\ismae\\OneDrive\\Desktop\\proyecto\\DataCliente\\DataCliente.cs",
               "RelativeToolTip": "DataCliente.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAMIAAAAAAAAAAAAswHMAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-19T13:00:17.74Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\ismae\\OneDrive\\Desktop\\proyecto\\PantallaClientes\\Form1.cs",
-              "RelativeDocumentMoniker": "..\\PantallaClientes\\Form1.cs",
-              "ToolTip": "C:\\Users\\ismae\\OneDrive\\Desktop\\proyecto\\PantallaClientes\\Form1.cs",
-              "RelativeToolTip": "..\\PantallaClientes\\Form1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "NegocioCliente.cs",
+              "DocumentMoniker": "C:\\Users\\ismae\\OneDrive\\Desktop\\proyecto\\NegocioCliente\\NegocioCliente.cs",
+              "RelativeDocumentMoniker": "..\\NegocioCliente\\NegocioCliente.cs",
+              "ToolTip": "C:\\Users\\ismae\\OneDrive\\Desktop\\proyecto\\NegocioCliente\\NegocioCliente.cs",
+              "RelativeToolTip": "..\\NegocioCliente\\NegocioCliente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFIAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-19T12:49:25.953Z",
+              "WhenOpened": "2025-10-19T13:47:56.325Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form1.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\ismae\\OneDrive\\Desktop\\proyecto\\PantallaClientes\\Form1.cs",
               "RelativeDocumentMoniker": "..\\PantallaClientes\\Form1.cs",
               "ToolTip": "C:\\Users\\ismae\\OneDrive\\Desktop\\proyecto\\PantallaClientes\\Form1.cs [Dise\u00F1o]",
               "RelativeToolTip": "..\\PantallaClientes\\Form1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-19T12:10:56.353Z",
+              "WhenOpened": "2025-10-19T13:32:45.487Z",
               "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\ismae\\OneDrive\\Desktop\\proyecto\\PantallaClientes\\Form1.cs",
+              "RelativeDocumentMoniker": "..\\PantallaClientes\\Form1.cs",
+              "ToolTip": "C:\\Users\\ismae\\OneDrive\\Desktop\\proyecto\\PantallaClientes\\Form1.cs",
+              "RelativeToolTip": "..\\PantallaClientes\\Form1.cs",
+              "ViewState": "AgIAAJcAAAAAAAAAAAAwwL8AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T12:49:25.953Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -1,6 +1,6 @@
 ﻿namespace DataCliente
 {
-    // Esta clase es la "Entidad" o "Modelo".
+    // Esta clase es la "Entidad"
     public class Cliente
     {
         // Propiedades que NO pueden ser nulas
@@ -12,7 +12,7 @@
         public string City { get; set; } = string.Empty;
         public string Country { get; set; } = string.Empty;
 
-        // Propiedades que SÍ pueden ser nulas (con '?' se arregla el error)
+        // Propiedades que SÍ pueden ser nulas 
         public string? Region { get; set; }
         public string? PostalCode { get; set; }
         public string? Phone { get; set; }

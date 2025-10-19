@@ -1,26 +1,22 @@
-﻿// Este es el archivo: NegocioCliente.cs
-// Ubicación: Proyecto NegocioCliente
-
-using DataCliente; // Para poder usar las clases "Cliente" y "DataCliente"
+﻿using DataCliente; 
 using System;
-using System.Collections.Generic; // Necesario para List<>
-using System.Text.RegularExpressions; // Para validaciones
+using System.Collections.Generic; 
+using System.Text.RegularExpressions; 
 
 namespace NegocioCliente
 {
-    // Esta es la clase de la Capa de Negocio (BLL)
     public class NegocioCliente
     {
-        // 1. PROPIEDAD
+        // PROPIEDAD
         private DataCliente.DataCliente datos;
 
-        // 2. CONSTRUCTOR
+        // CONSTRUCTOR
         public NegocioCliente()
         {
             datos = new DataCliente.DataCliente();
         }
 
-        // 3. MÉTODOS (Casos de Uso)
+        //MÉTODOS 
 
         /// <summary>
         /// Caso de Uso: Consultar un Cliente por ID.
@@ -35,12 +31,12 @@ namespace NegocioCliente
         /// </summary>
         public bool Insertar(Cliente cliente)
         {
-            // Regla 1: El ID es obligatorio y debe tener 5 mayúsculas.
+            //El ID es obligatorio y debe tener 5 mayúsculas.
             if (string.IsNullOrWhiteSpace(cliente.CustomerID) || !Regex.IsMatch(cliente.CustomerID, @"^[A-Z]{5}$"))
             {
                 return false;
             }
-            // Regla 2: El nombre de la compañía es obligatorio.
+            //El nombre de la compañía es obligatorio.
             if (string.IsNullOrWhiteSpace(cliente.CompanyName))
             {
                 return false;
@@ -53,12 +49,12 @@ namespace NegocioCliente
         /// </summary>
         public bool Actualizar(Cliente cliente)
         {
-            // Regla 1: El ID es obligatorio.
+            // El ID es obligatorio.
             if (string.IsNullOrWhiteSpace(cliente.CustomerID))
             {
                 return false;
             }
-            // Regla 2: El nombre de la compañía es obligatorio.
+            //El nombre de la compañía es obligatorio.
             if (string.IsNullOrWhiteSpace(cliente.CompanyName))
             {
                 return false;
@@ -79,12 +75,12 @@ namespace NegocioCliente
         }
 
         /// <summary>
-        /// *** MÉTODO NUEVO PARA BÚSQUEDA ***
+        /// *** MÉTODO  DE BÚSQUEDA ***
         /// Caso de Uso: Buscar Clientes.
         /// </summary>
         public List<Cliente> BuscarClientes(string terminoBusqueda)
         {
-            // Regla 1: No buscar si el texto es muy corto (ej. menos de 2 letras)
+            //No buscar si el texto es muy corto (ej. menos de 2 letras)
             if (string.IsNullOrWhiteSpace(terminoBusqueda) || terminoBusqueda.Length < 2)
             {
                 return new List<Cliente>(); // Devuelve lista vacía
