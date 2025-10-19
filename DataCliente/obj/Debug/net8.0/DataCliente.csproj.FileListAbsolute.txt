@@ -1,0 +1,12 @@
+C:\Users\ismae\OneDrive\Desktop\proyecto\DataCliente\obj\Debug\net8.0\DataCliente.csproj.AssemblyReference.cache
+C:\Users\ismae\OneDrive\Desktop\proyecto\DataCliente\obj\Debug\net8.0\DataCliente.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ismae\OneDrive\Desktop\proyecto\DataCliente\obj\Debug\net8.0\DataCliente.AssemblyInfoInputs.cache
+C:\Users\ismae\OneDrive\Desktop\proyecto\DataCliente\obj\Debug\net8.0\DataCliente.AssemblyInfo.cs
+C:\Users\ismae\OneDrive\Desktop\proyecto\DataCliente\obj\Debug\net8.0\DataCliente.csproj.CoreCompileInputs.cache
+C:\Users\ismae\OneDrive\Desktop\proyecto\DataCliente\bin\Debug\net8.0\DataCliente.deps.json
+C:\Users\ismae\OneDrive\Desktop\proyecto\DataCliente\bin\Debug\net8.0\DataCliente.dll
+C:\Users\ismae\OneDrive\Desktop\proyecto\DataCliente\bin\Debug\net8.0\DataCliente.pdb
+C:\Users\ismae\OneDrive\Desktop\proyecto\DataCliente\obj\Debug\net8.0\DataCliente.dll
+C:\Users\ismae\OneDrive\Desktop\proyecto\DataCliente\obj\Debug\net8.0\refint\DataCliente.dll
+C:\Users\ismae\OneDrive\Desktop\proyecto\DataCliente\obj\Debug\net8.0\DataCliente.pdb
+C:\Users\ismae\OneDrive\Desktop\proyecto\DataCliente\obj\Debug\net8.0\ref\DataCliente.dll

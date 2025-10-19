@@ -1,0 +1,15 @@
+C:\Users\ismae\OneDrive\Desktop\proyecto\NegocioCliente\obj\Debug\net8.0\NegocioCliente.csproj.AssemblyReference.cache
+C:\Users\ismae\OneDrive\Desktop\proyecto\NegocioCliente\obj\Debug\net8.0\NegocioCliente.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ismae\OneDrive\Desktop\proyecto\NegocioCliente\obj\Debug\net8.0\NegocioCliente.AssemblyInfoInputs.cache
+C:\Users\ismae\OneDrive\Desktop\proyecto\NegocioCliente\obj\Debug\net8.0\NegocioCliente.AssemblyInfo.cs
+C:\Users\ismae\OneDrive\Desktop\proyecto\NegocioCliente\obj\Debug\net8.0\NegocioCliente.csproj.CoreCompileInputs.cache
+C:\Users\ismae\OneDrive\Desktop\proyecto\NegocioCliente\bin\Debug\net8.0\NegocioCliente.deps.json
+C:\Users\ismae\OneDrive\Desktop\proyecto\NegocioCliente\bin\Debug\net8.0\NegocioCliente.dll
+C:\Users\ismae\OneDrive\Desktop\proyecto\NegocioCliente\bin\Debug\net8.0\NegocioCliente.pdb
+C:\Users\ismae\OneDrive\Desktop\proyecto\NegocioCliente\bin\Debug\net8.0\DataCliente.dll
+C:\Users\ismae\OneDrive\Desktop\proyecto\NegocioCliente\bin\Debug\net8.0\DataCliente.pdb
+C:\Users\ismae\OneDrive\Desktop\proyecto\NegocioCliente\obj\Debug\net8.0\NegocioC.FE34E8AF.Up2Date
+C:\Users\ismae\OneDrive\Desktop\proyecto\NegocioCliente\obj\Debug\net8.0\NegocioCliente.dll
+C:\Users\ismae\OneDrive\Desktop\proyecto\NegocioCliente\obj\Debug\net8.0\refint\NegocioCliente.dll
+C:\Users\ismae\OneDrive\Desktop\proyecto\NegocioCliente\obj\Debug\net8.0\NegocioCliente.pdb
+C:\Users\ismae\OneDrive\Desktop\proyecto\NegocioCliente\obj\Debug\net8.0\ref\NegocioCliente.dll
