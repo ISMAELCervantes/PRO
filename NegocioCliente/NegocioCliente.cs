@@ -1,6 +1,6 @@
-﻿using DataCliente; 
+﻿using DataCliente;
 using System;
-using System.Collections.Generic; 
+using System.Collections.Generic;
 using System.Text.RegularExpressions; 
 
 namespace NegocioCliente
@@ -31,11 +31,13 @@ namespace NegocioCliente
         /// </summary>
         public bool Insertar(Cliente cliente)
         {
-            //El ID es obligatorio y debe tener 5 mayúsculas.
-            if (string.IsNullOrWhiteSpace(cliente.CustomerID) || !Regex.IsMatch(cliente.CustomerID, @"^[A-Z]{5}$"))
+            // === VALIDACIÓN AÑADIDA ===
+            // Ahora llamamos al método de validación.
+            if (!ValidarID(cliente.CustomerID))
             {
                 return false;
             }
+
             //El nombre de la compañía es obligatorio.
             if (string.IsNullOrWhiteSpace(cliente.CompanyName))
             {
@@ -86,6 +88,24 @@ namespace NegocioCliente
                 return new List<Cliente>(); // Devuelve lista vacía
             }
             return datos.BuscarClientes(terminoBusqueda);
+        }
+
+        /// <summary>
+        /// Valida la regla de negocio para un CustomerID.
+        /// Debe ser exactamente 5 letras mayúsculas.
+        /// </summary>
+        /// <param name="id">El ID a validar</param>
+        /// <returns>True si es válido, False si es inválido.</returns>
+        public bool ValidarID(string id)
+        {
+            //El ID es obligatorio y debe tener 5 mayúsculas.
+            if (string.IsNullOrWhiteSpace(id) || !Regex.IsMatch(id, @"^[A-Z]{5}$"))
+            {
+                return false;
+            }
+
+            // Si pasa la validación, es verdadero
+            return true;
         }
     }
 }

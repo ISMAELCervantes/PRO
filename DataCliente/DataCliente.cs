@@ -54,19 +54,23 @@ namespace DataCliente
                     // Asignación de parámetros para evitar inyección SQL.
                     cmd.Parameters.AddWithValue("@CustomerID", cliente.CustomerID);
                     cmd.Parameters.AddWithValue("@CompanyName", cliente.CompanyName);
-                    cmd.Parameters.AddWithValue("@ContactName", cliente.ContactName);
-                    cmd.Parameters.AddWithValue("@ContactTitle", cliente.ContactTitle);
-                    cmd.Parameters.AddWithValue("@Address", cliente.Address);
-                    cmd.Parameters.AddWithValue("@City", cliente.City);
+                    cmd.Parameters.AddWithValue("@ContactName", (object)cliente.ContactName ?? DBNull.Value); // Corregido
+
+                    // --- CORRECCIÓN AQUÍ ---
+                    // Manejar correctamente los strings que pueden ser nulos
+                    cmd.Parameters.AddWithValue("@ContactTitle", (object)cliente.ContactTitle ?? DBNull.Value);
+                    cmd.Parameters.AddWithValue("@Address", (object)cliente.Address ?? DBNull.Value);
+                    cmd.Parameters.AddWithValue("@City", (object)cliente.City ?? DBNull.Value);
                     cmd.Parameters.AddWithValue("@Region", (object)cliente.Region ?? DBNull.Value);
                     cmd.Parameters.AddWithValue("@PostalCode", (object)cliente.PostalCode ?? DBNull.Value);
                     cmd.Parameters.AddWithValue("@Country", (object)cliente.Country ?? DBNull.Value);
                     cmd.Parameters.AddWithValue("@Phone", (object)cliente.Phone ?? DBNull.Value);
                     cmd.Parameters.AddWithValue("@Fax", (object)cliente.Fax ?? DBNull.Value);
 
-                    // Ejecuta el comando SQL.
-                    cmd.ExecuteNonQuery();
-                    return true;
+
+                    // Ejecuta el comando SQL y comprueba las filas afectadas.
+                    int rowsAffected = cmd.ExecuteNonQuery();
+                    return rowsAffected > 0;
                 }
             }
             catch (Exception ex)
@@ -95,10 +99,12 @@ namespace DataCliente
                 {
                     // Parámetros actualizados.
                     cmd.Parameters.AddWithValue("@CompanyName", cliente.CompanyName);
-                    cmd.Parameters.AddWithValue("@ContactName", cliente.ContactName);
-                    cmd.Parameters.AddWithValue("@ContactTitle", cliente.ContactTitle);
-                    cmd.Parameters.AddWithValue("@Address", cliente.Address);
-                    cmd.Parameters.AddWithValue("@City", cliente.City);
+                    cmd.Parameters.AddWithValue("@ContactName", (object)cliente.ContactName ?? DBNull.Value); // Corregido
+
+                    // --- CORRECCIÓN AQUÍ (Igual que en Insertar) ---
+                    cmd.Parameters.AddWithValue("@ContactTitle", (object)cliente.ContactTitle ?? DBNull.Value);
+                    cmd.Parameters.AddWithValue("@Address", (object)cliente.Address ?? DBNull.Value);
+                    cmd.Parameters.AddWithValue("@City", (object)cliente.City ?? DBNull.Value);
                     cmd.Parameters.AddWithValue("@Region", (object)cliente.Region ?? DBNull.Value);
                     cmd.Parameters.AddWithValue("@PostalCode", (object)cliente.PostalCode ?? DBNull.Value);
                     cmd.Parameters.AddWithValue("@Country", (object)cliente.Country ?? DBNull.Value);
@@ -166,10 +172,13 @@ namespace DataCliente
                             {
                                 CustomerID = reader["CustomerID"].ToString(),
                                 CompanyName = reader["CompanyName"].ToString(),
-                                ContactName = reader["ContactName"].ToString(),
-                                ContactTitle = reader["ContactTitle"].ToString(),
-                                Address = reader["Address"].ToString(),
-                                City = reader["City"].ToString(),
+
+                                // --- CORRECCIÓN AQUÍ ---
+                                // Comprobar si los valores son DBNull.Value antes de convertirlos
+                                ContactName = reader["ContactName"] != DBNull.Value ? reader["ContactName"].ToString() : null,
+                                ContactTitle = reader["ContactTitle"] != DBNull.Value ? reader["ContactTitle"].ToString() : null,
+                                Address = reader["Address"] != DBNull.Value ? reader["Address"].ToString() : null,
+                                City = reader["City"] != DBNull.Value ? reader["City"].ToString() : null,
                                 Region = reader["Region"] != DBNull.Value ? reader["Region"].ToString() : null,
                                 PostalCode = reader["PostalCode"] != DBNull.Value ? reader["PostalCode"].ToString() : null,
                                 Country = reader["Country"] != DBNull.Value ? reader["Country"].ToString() : null,
@@ -187,6 +196,7 @@ namespace DataCliente
             }
             catch (Exception ex)
             {
+                // Si hay un error (ej. al leer un nulo), devuelve null
                 return null;
             }
             finally
@@ -222,9 +232,10 @@ namespace DataCliente
                             {
                                 CustomerID = reader["CustomerID"].ToString(),
                                 CompanyName = reader["CompanyName"].ToString(),
-                                ContactName = reader["ContactName"].ToString(),
-                                City = reader["City"].ToString(),
-                                Country = reader["Country"].ToString()
+                                // --- CORRECCIÓN AQUÍ (Igual que en CargarCliente) ---
+                                ContactName = reader["ContactName"] != DBNull.Value ? reader["ContactName"].ToString() : null,
+                                City = reader["City"] != DBNull.Value ? reader["City"].ToString() : null,
+                                Country = reader["Country"] != DBNull.Value ? reader["Country"].ToString() : null
                             };
                             resultados.Add(cliente);
                         }

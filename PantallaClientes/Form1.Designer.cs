@@ -32,14 +32,6 @@
             txtBusqueda = new TextBox();
             btnBuscar = new Button();
             dataGridView1 = new DataGridView();
-            región = new DataGridViewTextBoxColumn();
-            país = new DataGridViewTextBoxColumn();
-            fax = new DataGridViewTextBoxColumn();
-            compañía = new DataGridViewTextBoxColumn();
-            título = new DataGridViewTextBoxColumn();
-            ciudad = new DataGridViewTextBoxColumn();
-            Postal = new DataGridViewTextBoxColumn();
-            teléfono = new DataGridViewTextBoxColumn();
             lbID = new Label();
             lbContacto = new Label();
             lbDirección = new Label();
@@ -98,75 +90,12 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { región, país, fax, compañía, título, ciudad, Postal, teléfono });
             dataGridView1.Location = new Point(12, 105);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.Size = new Size(1051, 188);
             dataGridView1.TabIndex = 3;
-            // 
-            // región
-            // 
-            región.DataPropertyName = "Región";
-            región.HeaderText = "Región";
-            región.MinimumWidth = 6;
-            región.Name = "región";
-            región.Width = 125;
-            // 
-            // país
-            // 
-            país.DataPropertyName = "País";
-            país.HeaderText = "País";
-            país.MinimumWidth = 6;
-            país.Name = "país";
-            país.Width = 125;
-            // 
-            // fax
-            // 
-            fax.DataPropertyName = "Fax";
-            fax.HeaderText = "Fax";
-            fax.MinimumWidth = 6;
-            fax.Name = "fax";
-            fax.Width = 125;
-            // 
-            // compañía
-            // 
-            compañía.DataPropertyName = "Compañía";
-            compañía.HeaderText = "Compañía";
-            compañía.MinimumWidth = 6;
-            compañía.Name = "compañía";
-            compañía.Width = 125;
-            // 
-            // título
-            // 
-            título.DataPropertyName = "Título";
-            título.HeaderText = "Título";
-            título.MinimumWidth = 6;
-            título.Name = "título";
-            título.Width = 125;
-            // 
-            // ciudad
-            // 
-            ciudad.DataPropertyName = "Ciudad";
-            ciudad.HeaderText = "Ciudad";
-            ciudad.MinimumWidth = 6;
-            ciudad.Name = "ciudad";
-            ciudad.Width = 125;
-            // 
-            // Postal
-            // 
-            Postal.HeaderText = "C. Postal";
-            Postal.MinimumWidth = 6;
-            Postal.Name = "Postal";
-            Postal.Width = 125;
-            // 
-            // teléfono
-            // 
-            teléfono.DataPropertyName = "Teléfono";
-            teléfono.HeaderText = "Teléfono";
-            teléfono.MinimumWidth = 6;
-            teléfono.Name = "teléfono";
-            teléfono.Width = 125;
+            dataGridView1.CellClick += dataGridView1_CellClick;
             // 
             // lbID
             // 
@@ -458,13 +387,5 @@
         private Button btnActualizar;
         private Button btnEliminar;
         private Button btnLimpiar;
-        private DataGridViewTextBoxColumn región;
-        private DataGridViewTextBoxColumn país;
-        private DataGridViewTextBoxColumn fax;
-        private DataGridViewTextBoxColumn compañía;
-        private DataGridViewTextBoxColumn título;
-        private DataGridViewTextBoxColumn ciudad;
-        private DataGridViewTextBoxColumn Postal;
-        private DataGridViewTextBoxColumn teléfono;
     }
 }
